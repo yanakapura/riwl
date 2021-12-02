@@ -1,0 +1,126 @@
+<div class="product-gallery col-lg-6 col-sm-6 col-12">
+			<div class="product-gallery gallery">
+				
+				<div class="product-gallery--touch slider--gallery">
+					
+					<div class="g-swiper">
+					  <!-- Additional required wrapper -->
+					  <div class="swiper-wrapper">
+					    <!-- Slides -->
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1630/228394590/10521688-1-gold.jpeg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1631/228394591/10521688-2.jpeg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1633/228394593/10521688-3.jpeg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1635/228394595/10521688-4.jpeg" alt="The Last of us">
+						    </div>
+					    </div>
+					    ...
+					  </div>
+					 
+					  <!-- If we need navigation buttons -->
+					  <div class="swiper-button-prev"></div>
+					  <div class="swiper-button-next"></div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div> 
+
+		<div class="product-info col-lg-6 col-sm-6 col-12">
+			<div class="breadcrumbs">
+				<a href="#" onclick="$dc.loadPage('home', 0, 0);" class='breadcrumbs-page breadcrumbs-page--home'> Главная </a>
+				<span class="breadcrumbs-pipe"> / </span>
+				<p class="breadcrumbs-page" id="breadcrumbs-page"></p>
+			</div>
+			<h1 class="product-title content-title">Часы BOSS Trophy</h1>
+			<div class="product-presence">Наличие:
+				<span class="product-presence_field js-product-presence">Есть в наличии</span>
+		    </div>
+		    <form action="/cart_items" id="order" method="post" data-product-id="143579057" class="with-sale-value with-old-price without-sku is-available">
+		        <div class="product-variants row">
+		          
+		          <div class="option_selector option_selector--razmer option_selector--span">
+		        	<label class="option_selector-label option_selector-label--razmer">Размер</label>
+		        	<div class="option_selector-container option_selector-container--razmer">
+				        <span data-option-id="12786834" data-option-position="11" data-option-index="0" class="variant-span variant-span--razmer variant-span--active">Один размер</span>
+				    </div>
+				  </div>
+			    </div>
+			    <div class="product-prices prices">
+			    	<span class="prices-current js-prices-current">42500.00&nbsp;руб</span>
+			    </div>
+			    <div class="product-control">
+			    	<div class="product-quantity quantity quantity--side" data-quantity="" data-quantity-change-init="true">
+			    		<button class="quantity-button quantity-button--minus
+                      button" type="button" onClick="js_quantity(0, 'input', 0)" >-
+                        </button>
+                        <input name="quantity" value="1" class="quantity-input js-quantity-input" id="input">
+                        <button class="quantity-button quantity-button--plus
+                      button" type="button" onClick="js_quantity(1, 'input', 0)">+
+                        </button>
+                    </div>
+                  
+                    <button type="button" class="product-buy button" id="buy" onclick="location.href='#popup', js_buy_numb(watch_2, 0),js_buy_arr(watch_2)">В корзину</button>
+                    <button class="product-buy button quick_btn" data-quick-checkout="">Заказ в 1 клик</button>
+                </div>
+            </form>
+            <div class="tubs col-12">
+            	
+            	<div class="accordion js-accordion">
+            		<div class="accordion__item js-accordion-item">
+            			<details>
+            				<summary class="accordion-header">Описание
+            				</summary>
+            				<div class="accordion-body__contents">
+            					<p>Делая акцент на качестве и безупречном дизайне,&nbsp;BOSS&nbsp;предлагает премиум-коллекцию классических костюмов, спортивной и элегантной повседневной одежды. В современных коллекциях костюмов, рубашек, брюк и футболок представлены строгие модели, великолепно сочетающиеся со спортивной и повседневной одеждой.</p>
+            				</div>
+            			</details>
+            			</div>
+            		</div> <!-- end of accordion body -->
+            		
+            		<div class="accordion__item js-accordion-item">
+            			<details>
+            			<summary class="accordion-header">Характеристики</summary>
+            			<div class="accordion-body">
+            				<div class="accordion-body__contents">
+            					<table class="product-properties">
+            						<tbody>
+            							<tr>
+            								<td class="property-title">Цвет:</td>
+	            							<td class="property-values">Золотой</td>
+            								<td class="property-title">Материал:</td>
+	            							<td class="property-values">Нержавеющая сталь</td>
+	            							<td class="property-title">Бренд:</td>
+	            							<td class="property-values">BOSS</td>
+	            						</tr>
+	            					</tbody>
+	            				</table>
+	            			</div>
+	            		</details>
+	            		</div>
+	            	</div><!-- end of accordion body -->
+	            	<div class="popup" id="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<div class="popup__title">Товар добавлен в корзину</div>
+								<a href="#" class="button button--border popup__close">Продолжить покупки</a>
+								<span onclick="js_buy_print()" class="button button--buy">Перейти в корзину</span>
+							</div>
+						</div>
+					</div>
+
+		</div>

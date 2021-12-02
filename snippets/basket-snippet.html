@@ -1,0 +1,24 @@
+<div class="wrap">
+	<div class="breadcrumbs">
+		<a href="#" onclick="$dc.loadPage('home', 0, 0);" class='breadcrumbs-page breadcrumbs-page--home'> Главная </a>
+		<span class="breadcrumbs-pipe"> / </span>
+		<p class="breadcrumbs-page" id="breadcrumbs-page"></p>
+	</div>
+	<h1 class="cart-title content-title">Корзина</h1>
+	<div class="notice notice--warning js-cart-notice" id="js-cart-notice"> В вашей корзине нет товаров</div>
+
+	<form id="cartform" class="cart-table_container">
+		<div class="cart-items_list col-lg-8 col-sm-12">
+			<ul id="ul">
+			</ul>
+		</div>
+
+	<div class="cart-items_sum col-lg-4 col-12">
+	    <div class="cart_total">
+	        <div class="cart_total-title">Итого:</div>
+	        <div class="cart_total-price prices-current js-cart-total">0&nbsp;руб</div>
+	    </div>
+	    <input type="button" onclick="js_order();" class="button button--checkout js-cart-submit" value="Оформить заказ">
+	</form>
+    </div>
+</div>

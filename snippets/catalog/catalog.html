@@ -1,0 +1,148 @@
+<div class="wrap">
+	<div class="grid-row-inner collection-pad row">
+		<div class="col-lg-3 d-lg-block d-none sticky-sidebar">
+			<div class="sidebar">
+				<div class="sidebar_block">
+					<div class="sidebar_block-title" id="filtr">Фильтр</div>
+					<div class="sidebar_block-content">
+						<details>
+            			<summary class="filter_section-title">Цвет</summary>
+            			<ul class="filter_section-values">
+            				<li class="filter_section-value">
+            					<input type="checkbox" onchange="js_filter(this,'color', 'gold');" class="filter_section-value_input" id="gold" name="color">
+            					<a href="#" class="filter_section-value_link">Золотой (3)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" onchange="js_filter(this,'color', 'multi');" class="filter_section-value_input" id="multi" name="color">
+            					<a href="#" class="filter_section-value_link">Мульти (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" onchange="js_filter(this,'color', 'silvern');" class="filter_section-value_input" id="silvern" name="color">
+            					<a href="#" class="filter_section-value_link">Серебрянный (4)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" onchange="js_filter(this,'color', 'black');" class="filter_section-value_input" id="black" name="color">
+            					<a href="#" class="filter_section-value_link">Черный (1)</a>
+            				</li>
+            			</ul>
+	            		</details>
+
+	            		<details>
+            			<summary class="filter_section-title">Материал</summary>
+            			<ul class="filter_section-values">
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" onchange="js_filter(this,'material', 'steel');" id="steel" name="material">
+            					<a href="#" class="filter_section-value_link">Нержавеющая сталь (2)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" onchange="js_filter(this,'material', 'silver');" id="silver" name="material">
+            					<a href="#" class="filter_section-value_link">Cеребро (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" onchange="js_filter(this,'material', 'zinc');" id="zinc" name="material">
+            					<a href="#" class="filter_section-value_link">Цинк (2)</a>
+            				</li>
+            			</ul>
+	            		</details>
+
+	            		<details>
+            			<summary class="filter_section-title">Бренд</summary>
+            			<ul class="filter_section-values">
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="adidas" onchange="js_filter(this,'brand', 0);" name="brand">
+            					<a href="#" class="filter_section-value_link">Adidas (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="armani" onchange="js_filter(this,'brand', 0);" name="brand">
+            					<a href="#" class="filter_section-value_link">Emporio Armani (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="paul" onchange="js_filter(this,'brand', 0);" name="brand">
+            					<a href="#" class="filter_section-value_link">Paul Smith (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="desingB" onchange="js_filter(this,'brand', 0);" name="brand">
+            					<a href="#" class="filter_section-value_link">DesingB (1)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="serge" onchange="js_filter(this,'brand', 0);" name="brand">
+            					<a href="#" class="filter_section-value_link">Serge DeNimes (1)</a>
+            				</li>
+            			</ul>
+	            		</details>
+
+	            		<details>
+            			<summary class="filter_section-title">Размер</summary>
+            			<ul class="filter_section-values">
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="one" onchange="js_filter(this,'size', 0);" name="size">
+            					<a href="#" class="filter_section-value_link">Один размер (9)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="many" onchange="js_filter(this,'size', 0);" name="size">
+            					<a href="#" class="filter_section-value_link">S (3)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="many" onchange="js_filter(this,'size', 0);" name="size">
+            					<a href="#" class="filter_section-value_link">M (3)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="many" onchange="js_filter(this,'size', 0);" name="size">
+            					<a href="#" class="filter_section-value_link">L (3)</a>
+            				</li>
+            				<li class="filter_section-value">
+            					<input type="checkbox" class="filter_section-value_input" id="many" onchange="js_filter(this,'size', 0);" name="size">
+            					<a href="#" class="filter_section-value_link">XL (3)</a>
+            				</li>
+            			</ul>
+	            		</details>
+					</div>
+					<button type="button" onclick="js_filter_delete()" id="filter_delete-all">Очистить</button>
+				</div>
+			</div>
+		</div>
+		<div class="collection col-lg-9 col-sm-12">
+			<div class="breadcrumbs">
+			<a href='#' onclick="$dc.loadPage('home', 0, 0);" class='breadcrumbs-page breadcrumbs-page--home'> Главная </a>
+			<span class="breadcrumbs-pipe"> / </span>
+			<p class="breadcrumbs-page" id="breadcrumbs-page"></p>
+			</div>
+			<h1 class="collection-title content-title">Каталог</h1>
+			<form action="/collection/all" method="get" class="sort_by
+            lg-fr md-fr">
+			    <span class="sort_by-option">
+			      <label for="order" class="sort_by-label sm-hidden xs-hidden">
+			        Сортировать
+			      </label>
+			      <div class="styled_select-wrapper"><select id="order" name="order" value="" class="sort_by-select js-sort_by js-styled">
+			        <option value="">по умолчанию</option>
+			        <option value="price">по возрастанию цены</option>
+			        <option value="descending_price">по убыванию цены</option>
+			        <option value="title">алфавиту А-Я</option>
+			        <option value="descending_title">алфавиту Я-А</option>
+			        <option value="descending_age">новые - старые</option>
+			        <option value="age">старые - новые</option>
+			      </select></div>
+			    </span>
+			    <span class="sort_by-option fr">
+			      <label for="page_size" class="sort_by-label  sm-hidden xs-hidden">
+			        Показывать
+			      </label>
+			      <div class="styled_select-wrapper"><select id="page_size" name="page_size" value="" class="sort_by-select js-sort_by js-styled">
+			        <option value="24">24</option>
+			        <option value="36">36</option>
+			        <option value="96">96</option>
+			      </select></div>
+			    </span>
+			  <input type="hidden" name="price_min" value="" disabled="disabled">
+			  <input type="hidden" name="price_max" value="" disabled="disabled">
+			</form>
+
+
+			<div class="collection-products_list">
+				
+			</div>
+			
+		</div> <!-- End of collection -->
+	</div> <!-- End of collection-pad -->
+</div>

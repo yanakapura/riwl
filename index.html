@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Riwl </title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+</head>
+<body>
+	<div class="big-inner-box">
+	<header id="header">
+		<div class="section--header">
+			<div class="header-padded row row-cols-3">
+
+				<div class="col-lg-2 col-md-2 col-sm-12 col-12 site-logo"><a href="#" onclick="$dc.loadPage('home', 0, 0);" class="logo"><img src="img/logo.png" alt="Riwl" title="Riwl"></a></div>
+
+				<div class="section--menu col-lg-7 col-7">
+					<div class="sm-hidden xs-hidden">
+						<ul class="menu menu--horizontal">
+							<li class="menu-node">
+								<a href="#" onclick="$dc.loadPage('catalog', 'all', 0);" class="menu-link"> Каталог </a>
+							</li>
+							<li class="menu-node" id="dost">
+								<a href="#" onclick="$dc.loadPage('delivery', 0, 0);" class="menu-link" id="dostavka">  Доставка </a>
+							</li>
+							<li class="menu-node">
+								<a href="#" onclick="$dc.loadPage('contacts', 0, 0);" class="menu-link" id="kontakty"> Контакты </a>
+							</li>
+							<li class="menu-node">
+								<a href="#" onclick="$dc.loadPage('about', 0,0);" class="menu-link">О нас</a>
+							</li>
+						</ul>
+					</div>
+					<div class="center lg-hidden md-hidden menu menu--main menu-mobile">
+					  <li class="menu-node menu-node--main_lvl_1">
+					    <span class="menu-link
+					                js-panel-link" data-params="target: '.js-panel-collection'">
+					      <i class="fa fa-bars"></i>
+					      <span>
+					        Каталог
+					      </span>
+					    </span>
+					  </li>
+					</div>
+				</div>
+				<div class="section--right col-lg-3 col-sm-3">
+					<span class="search_widget-toggler">
+						<i class="fa fa-search" onclick="js_search()"></i>
+						<input name="" id="search_input" placeholder="Найти">
+					</span>
+					<div class="basket-wrapper sm-hidden xs-hidden">
+						<div class="basket">
+							<a href="#" onclick="js_buy_print()" class="basket-link">
+								<span class="basket-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+								<span class="basket-total">
+									<span class="basket-items_count js-basket-items_count">0</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header> <!-- End of Header -->
+
+	<section class="section--content">
+		
+
+	</section>
+
+	<footer class="panel-footer">
+		<div class="section--footer_copyright wrap row">
+			<div class="row">
+				<div class="footer_block col-lg-4 col-sm-4 col-6">
+					<div class="footer_block-h3">Покупателям</div>
+					<ul class="footer_block-content
+                    menu menu--footer menu--horizontal">
+
+		              <li class="menu-node menu-node--footer">
+		                <a href="#" onclick="$dc.loadPage('delivery', 0,0);" class="menu-link ">
+		                  Доставка
+		                </a>
+		              </li>
+		            
+		              <li class="menu-node menu-node--footer">
+		                <a href="#" onclick="$dc.loadPage('oplata', 0,0);" class="menu-link ">
+		                  Оплата
+		                </a>
+		              </li>
+		            
+		              <li class="menu-node menu-node--footer">
+		                <a href="#" onclick="$dc.loadPage('vozvrat', 0,0);" class="menu-link ">
+		                  Возврат товара
+		                </a>
+		              </li>
+		            
+		          </ul>
+				</div>
+				<div class="footer_block col-lg-5 col-sm-4 col-6">
+		         <div class="footer_block-h3">Информация</div>
+		          <ul class="footer_block-content
+		                    menu menu--footer menu--horizontal">
+		            
+		              <li class="menu-node menu-node--footer">
+		                <a href="#" onclick="$dc.loadPage('about', 0, 0);" class="menu-link ">
+		                  О нас
+		                </a>
+		              </li>
+		            
+		              <li class="menu-node menu-node--footer">
+		                <a href="#" onclick="$dc.loadPage('contacts', 0, 0);"  class="menu-link ">
+		                  Контакты
+		                </a>
+		              </li>
+		            
+		          </ul>
+		        </div>
+		        <div class="footer_block col-lg-3 col-sm-4 col-8">
+		          <div class="footer_block-content social-menu">
+		            <div class="footer-phone" id="phone_footer">
+		                  <a href="#" title="Позвонить">+375 (33) 582-99-23</a>
+		                  <a href="#" title="Позвонить">+375 (44) 794-16-86</a>
+		              </div>
+		            
+		            <div class="footer-social">
+		                <a href="https://instagram.com/test" class="social-link" target="_blank" title="Instagram">
+		                  <img src="https://assets3.insales.ru/assets/1/3684/1412708/1588927207/instagram_icon.svg" class="social-img">
+		                </a>
+		                <a href="https://vk.com/" class="social-link" target="_blank" title="Вконтакте">
+		                  <img src="https://assets3.insales.ru/assets/1/3684/1412708/1588927207/vk_icon.svg" class="social-img">
+		                </a>
+		                <a href="#" class="social-link" target="_blank" title="Facebook">
+		                  <img src="https://assets3.insales.ru/assets/1/3684/1412708/1588927207/fb_icon.svg" class="social-img">
+		                </a>
+		                <a href="" class="social-link" target="_blank" title="Youtube">
+		                  <img src="https://assets3.insales.ru/assets/1/3684/1412708/1588927207/youtube_icon1.svg" class="social-img">
+		                </a>
+		            
+		            </div>
+		            
+		          </div>
+		         
+		    	</div>
+		        </div>
+			
+			<div class="copyright col-lg-12 col-sm-12 col-12 justify-content-center"> "RIWL – мультибрендовый магазин" <i class="fa fa-copyright"></i>2021
+			</div>
+		</div> <!-- End of section--footer_copyright -->
+	</footer>
+
+</div>
+	
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+	
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+</body>
+</html>

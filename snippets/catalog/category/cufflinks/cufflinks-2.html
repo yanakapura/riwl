@@ -1,0 +1,133 @@
+<div class="product-gallery col-lg-6 col-sm-6 col-12">
+			<div class="product-gallery gallery">
+				
+				<div class="product-gallery--touch slider--gallery">
+					
+					<div class="g-swiper">
+					  <!-- Additional required wrapper -->
+					  <div class="swiper-wrapper">
+					    <!-- Slides -->
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1665/228394625/download-2.jpg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1666/228394626/download-1.jpg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1670/228394630/download.jpg" alt="The Last of us">
+						    </div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="image-slider__image">
+						    	<img src="https://static-sl.insales.ru/images/products/1/1668/228394628/download-3.jpg" alt="The Last of us">
+						    </div>
+					    </div>
+					    ...
+					  </div>
+					 
+					  <!-- If we need navigation buttons -->
+					  <div class="swiper-button-prev"></div>
+					  <div class="swiper-button-next"></div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div> 
+
+		<div class="product-info col-lg-6 col-sm-6 col-12">
+			<div class="breadcrumbs">
+				<a href="#" onclick="$dc.loadPage('home', 0, 0);" class='breadcrumbs-page breadcrumbs-page--home'> Главная </a>
+				<span class="breadcrumbs-pipe"> / </span>
+				<p class="breadcrumbs-page" id="breadcrumbs-page"></p>
+			</div>
+			<h1 class="product-title content-title">Золотистые запонки с контрастной отделкой DesignB</h1>
+			<div class="product-presence">Наличие:
+				<span class="product-presence_field js-product-presence">Есть в наличии</span>
+		    </div>
+		    <form action="/cart_items" id="order" method="post" data-product-id="143579057" class="with-sale-value with-old-price without-sku is-available">
+	        <div class="product-variants row">
+	          <select name="variant_id" id="variant-select" data-product-variants="" style="display: none;">
+	            <option value="250142817">Один размер</option>
+	          </select>
+			    </div>
+			    <div class="product-prices prices">
+			    	<span class="prices-old js-prices-old">1900.00&nbsp;руб</span>
+			    	<span class="prices-current js-prices-current">1400.00&nbsp;руб</span>
+			    </div>
+			    <div class="product-control">
+			    	<div class="product-quantity quantity quantity--side" data-quantity="" data-quantity-change-init="true">
+			    		<button class="quantity-button quantity-button--minus
+                      button" type="button" onClick="js_quantity(0, 'input', 0)" >-
+                        </button>
+                        <input  name="quantity" value="1" class="quantity-input js-quantity-input" id="input">
+                        <button class="quantity-button quantity-button--plus
+                      button" type="button" onClick="js_quantity(1, 'input', 0)">+
+                        </button>
+                    </div>
+                  
+                    <button type="button" class="product-buy button" id="buy" onclick="location.href='#popup', js_buy_numb(cuffl_2, 0),js_buy_arr(cuffl_2)">В корзину</button>
+                    <button class="product-buy button quick_btn" data-quick-checkout="">Заказ в 1 клик</button>
+                </div>
+            </form>
+            <div class="tubs col-12">
+            	
+            	<div class="accordion js-accordion">
+            		<div class="accordion__item js-accordion-item">
+            			<details>
+            				<summary class="accordion-header">Описание
+            				</summary>
+            				<div class="accordion-body__contents">
+            					<p><strong>DesignB</strong>&nbsp;– общепризнанный бренд аксессуаров. Команда лондонских дизайнеров под сильным влиянием уличного стиля создала коллекцию металлических браслетов из цепочек, массивных колец и сережек-гвоздиков.</p>
+            					<ul>
+            						<li>Вся суть в деталях</li>
+            						<li>Золотистое покрытие</li> 
+            						<li>Контрастная отделка</li> 
+            						<li>Застежка‑твист</li> 
+            					</ul>
+            				</div>
+            			</details>
+            			</div>
+            		</div> <!-- end of accordion body -->
+            		
+            		<div class="accordion__item js-accordion-item">
+            			<details>
+            			<summary class="accordion-header">Характеристики</summary>
+            			<div class="accordion-body">
+            				<div class="accordion-body__contents">
+            					<table class="product-properties">
+            						<tbody>
+            							<tr>
+            								<td class="property-title">Цвет:</td>
+	            							<td class="property-values">Золотой</td>
+	            						</tr>
+	            						<tr>
+	            							<td class="property-title">Бренд:</td>
+	            							<td class="property-values">DesignB</td>
+	            						</tr>
+	            						<tr>
+	            							<td class="property-title">Состав:</td>
+	            							<td class="property-values">70% цинк, 30% стекло</td>
+	            						</tr>
+	            					</tbody>
+	            				</table>
+	            			</div>
+	            		</details>
+	            		</div>
+	            	</div><!-- end of accordion body -->
+	            	<div class="popup" id="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<div class="popup__title">Товар добавлен в корзину</div>
+								<a href="#" class="button button--border popup__close">Продолжить покупки</a>
+								<span onclick="js_buy_print()" class="button button--buy">Перейти в корзину</span>
+							</div>
+						</div>
+					</div>
+
+		</div>

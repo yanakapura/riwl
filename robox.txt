@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /search/?query=
+Disallow: /compare/
+Disallow: /tag/
+Disallow: *&sort=*
+Disallow: */?sort=
+Disallow: /cart/
+Disallow: /order/
+Disallow: /checkout/
+Disallow: /singup/
+Disallow: /login/
+Disallow: /forgotpassword/
+
+Siteamp: https://riwl.com/sitemap.xml
